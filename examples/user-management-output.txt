@@ -1,0 +1,4 @@
+Creating user: jdoe
+User created.
+Adding jdoe to group sudo
+User added to group.
