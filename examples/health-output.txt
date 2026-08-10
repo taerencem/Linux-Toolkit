@@ -1,0 +1,30 @@
+SYSTEM HEALTH REPORT
+Generated: 2026-08-10
+
+---- CPU LOAD ----
+14:22:10 up 3 days,  2 users,  load average: 0.12, 0.08, 0.02
+
+---- MEMORY USAGE ----
+total        used        free      shared  buff/cache   available
+Mem:           7.7G        2.1G        3.8G        112M        1.8G        5.2G
+
+---- DISK USAGE ----
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        40G   12G   26G  32% /
+
+---- TOP PROCESSES ----
+PID  PPID CMD                         %MEM %CPU
+1234  1   /usr/bin/python3 app.py      2.3  12.5
+5678  1   /usr/bin/nginx               0.5   3.2
+
+---- SYSTEM UPTIME ----
+up 3 days, 4 hours
+
+---- LOGGED-IN USERS ----
+taerence  pts/0  2026-08-10 12:55
+
+---- NETWORK STATUS ----
+eth0   UP   10.0.0.15/24
+
+---- OPEN PORTS ----
+LISTEN 0      128    0.0.0.0:22     0.0.0.0:*    users:(("sshd",pid=123,fd=3))
