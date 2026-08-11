@@ -1,0 +1,53 @@
+LINUX SECURITY AUDIT REPORT
+Generated: 2026-08-11
+
+---- USERS ----
+root
+daemon
+syslog
+taerence
+
+---- GROUPS ----
+root
+sudo
+adm
+wheel
+
+---- SUDOERS ----
+sudo:x:27:taerence
+
+---- SSH SECURITY ----
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+X11Forwarding no
+
+---- FIREWALL RULES ----
+Status: active
+To                         Action      From
+22/tcp                     ALLOW       Anywhere
+
+---- OPEN PORTS ----
+LISTEN 0      128    0.0.0.0:22     0.0.0.0:*    users:(("sshd",pid=123,fd=3))
+
+---- RUNNING SERVICES ----
+sshd.service
+fail2ban.service
+cron.service
+
+---- FAIL2BAN STATUS ----
+Status for the jail: sshd
+|- Filter
+|  |- Currently failed: 0
+|- Actions
+|  |- Currently banned: 1
+
+---- FILE PERMISSIONS ----
+-rw-r--r-- 1 root root /etc/passwd
+---------- 1 root shadow /etc/shadow
+-r--r----- 1 root root /etc/sudoers
+
+---- SYSTEM UPDATES ----
+apache2/stable 2.4.57 upgradeable
+
+Security Audit Completed
