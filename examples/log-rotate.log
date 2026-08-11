@@ -1,0 +1,9 @@
+LOG ROTATION RUN
+Started: 2026-08-11
+
+Rotating log: /var/log/syslog
+Compressing rotated log...
+Log rotated and compressed: /var/log/syslog-2026-08-11.gz
+Deleting logs older than 7 days...
+
+Log Rotation Completed: 2026-08-11
